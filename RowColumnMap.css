@@ -1,0 +1,77 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px; /* Reduced padding */
+  background-color: #f8f8f8;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar img {
+  margin-left: 5px; /* Adjust margin */
+  height: 40px; /* Slightly smaller height */
+  padding-right: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 15px; /* Adjust spacing */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #388e3c;
+}
+
+/* Adjust the rest of the layout to account for the fixed navbar */
+.App {
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 60px; /* Adjusted padding to accommodate navbar height */
+  
+}
+
+.map-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 15rem;
+  background-color: #f9f9f9;
+
+}
+
+svg {
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.tree-data {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}

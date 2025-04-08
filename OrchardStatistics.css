@@ -1,0 +1,29 @@
+.statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .chart-container {
+    flex: 1;
+    min-width: 400px;
+  }
+  
+  svg {
+    border: 1px solid #ccc;
+  }
+  
+  .recommendation-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  

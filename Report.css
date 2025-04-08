@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    z-index: 1000; /* Keep navbar above other elements */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Main Content Styles */
+main {
+    position: absolute;
+    top: 80px; /* Ensure the navbar space is respected */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px); /* Full height minus navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent extra scrollbars */
+}
+
+iframe {
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the container */
+    border: none; /* Clean appearance */
+    display: block;
+    transform: scale(1.5); /* Scale the report to make it larger */
+    transform-origin: top left; /* Ensure scaling starts from the top-left */
+}

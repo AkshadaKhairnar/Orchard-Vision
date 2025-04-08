@@ -1,0 +1,14 @@
+.overall-statistics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.chart-container {
+  margin: 20px;
+}
+
+h3, h4 {
+  text-align: center;
+}
